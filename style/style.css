@@ -119,6 +119,7 @@ input::placeholder {
 .todo-li p {
   width: 92%;
   color: #fff;
+  padding-left: 30px;
 }
 
 .todo-list .check {
@@ -191,5 +192,10 @@ input::placeholder {
 }
 
 .active-check img {
-  transform: scale(0.5);
+  transform: scale(0.5) !important;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.5;
 }

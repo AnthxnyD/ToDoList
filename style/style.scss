@@ -114,6 +114,7 @@ font-size: 18px;
 .todo-li p{
     width: 92%;
     color: #fff;
+    padding-left: 30px;
 }
 .todo-list .check{
     width: 20px;
@@ -181,5 +182,10 @@ justify-content: center;
     background: linear-gradient(hsl(192, 100%, 67%) , hsl(280, 87%, 65%));
 }
 .active-check img{
-    transform: scale(0.5);
+    transform: scale(0.5) !important ;
+}
+.complete{
+    text-decoration: line-through;
+    opacity: 0.5;
+    
 }
