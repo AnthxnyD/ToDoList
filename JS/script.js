@@ -24,8 +24,8 @@ function addtodo(elem) {
     <div class="check ${elem && elem.complete ? "active-check" : ""}"><img src="./images/icon-check.svg" alt=""></div>
     <p class="ptag ${elem && elem.complete ? "complete" : ""}">${todotext}</p>
     <button class="close"><img src="./images/icon-cross.svg" alt=""></button>
-  </div>
-  <div class="hr"></div>`;
+    </div>
+    <div class="hr"></div>`;
         todoCon.appendChild(todoColl);
         updateLs()
     }
