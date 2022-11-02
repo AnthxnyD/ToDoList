@@ -59,8 +59,27 @@ function addtodo(elem) {
 
 }
 let info = document.querySelectorAll(".choice p")
+let todoli = document.querySelectorAll(".todo-li")
 console.log(info)
 info.forEach(element => {
-    console.log(element);
+    element.addEventListener("click", () => {
+        info.forEach(item => {
+            item.classList.remove("Active");
+        })
+    });
+    element.classList.add("Active")
+    if (element.innerText == "Active") {
+        todoli.forEach(elem => {
+            if (!elem.children[1].classList.contains("complete")) {
+                elem.style.display = "flex";
 
-});
+            } else {
+                elem.style.display = "none";
+            }
+        });
+    } else if (element.innerText == "Completed") {
+
+    } else {
+
+    }
+})
