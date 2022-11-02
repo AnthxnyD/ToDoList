@@ -33,12 +33,13 @@ function addtodo(elem) {
     close.addEventListener("click", () => {
 
         todoColl.remove();
+        updateLs();
     })
     let check = todoColl.querySelector(".check");
     check.addEventListener('click', () => {
         check.classList.toggle("active-check")
         todoColl.children[0].children[1].classList.add("complete");
-
+        updateLs();
     })
     function updateLs() {
 
@@ -57,3 +58,9 @@ function addtodo(elem) {
 
 
 }
+let info = document.querySelectorAll(".choice p")
+console.log(info)
+info.forEach(element => {
+    console.log(element);
+
+});
